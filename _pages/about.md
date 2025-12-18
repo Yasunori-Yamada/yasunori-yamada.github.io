@@ -1,56 +1,187 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+My research aims to advance healthcare through the application of cutting-edge technology.
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+With a background bridging academic research and industrial innovation, I have cultivated a diverse interdisciplinary perspective that encompasses computational neuroscience, robotics, digital health, and AI. My work involves not only the rigorous development and validation of AI models but also leading the design and execution of clinical research. Currently, I am focused on leveraging AI technologies to address clinical challenges in CT colonography.
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+## Education, Work and Research Experience
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <span class="timeline-year">2025 – present</span>
+      <h3 class="timeline-title">General Manager, Advanced Clinical R&D</h3>
+      <div class="timeline-organization">Boston Medical Sciences</div>
+      <div class="timeline-description">
+        Clinical Research in CT Colonography: Leading study design and execution
+      </div>
+    </div>
+  </div>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <span class="timeline-year">2023 – present</span>
+      <h3 class="timeline-title">Visiting Reseacher, Department of Psychiatry</h3>
+      <div class="timeline-organization">University of Tsukuba</div>
+      <div class="timeline-description">
+        Dementia Research: Leading clinical studies focused on early detection and differentiation
+      </div>
+    </div>
+  </div>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <span class="timeline-year">2015 – 2025</span>
+      <h3 class="timeline-title">Senior Research Scientist & Tech. Lead of Digital Health Team</h3>
+      <div class="timeline-organization">IBM Research - Tokyo</div>
+      <div class="timeline-description">
+        Digital Health for Neurology & Psychiatry: Developing and validating AI models via rigorous clinical studies
+      </div>
+    </div>
+  </div>
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <span class="timeline-year">2012 – 2015</span>
+      <h3 class="timeline-title">Ph.D. in Information Science & Technology<br>JSPS Research Fellow</h3>
+      <div class="timeline-organization">The University of Tokyo</div>
+      <div class="timeline-description">
+        Computational Brain Modeling: Constructing large-scale brain models of the human fetus
+      </div>
+    </div>
+  </div>
 
-**Markdown generator**
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <span class="timeline-year">2010 – 2012</span>
+      <h3 class="timeline-title">M.A. in Information Science & Technology</h3>
+      <div class="timeline-organization">The University of Tokyo</div>
+    </div>
+  </div>
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <span class="timeline-year">2006 – 2010</span>
+      <h3 class="timeline-title">B.S. in Engineering</h3>
+      <div class="timeline-organization">The University of Tokyo</div>
+    </div>
+  </div>
+</div>
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+## Awards
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+<div class="awards-intro">
+For a complete list of awards, including corporate and business recognitions, please refer to <a href="/cv/">my CV</a>.
+</div>
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<div class="awards-grid">
+  <div class="award-card">
+    <div class="award-year">2025</div>
+    <div class="award-title">Best Paper Award</div>
+    <div class="award-venue">IEEE International Conference on Digital Health</div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-year">2023</div>
+    <div class="award-title">Best Paper Award</div>
+    <div class="award-venue">IEEE International Conference on Digital Health</div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-year">2021</div>
+    <div class="award-title">Excellent Paper Award</div>
+    <div class="award-venue">IEEE Global Conference on Life Sciences & Technologies</div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-year">2020</div>
+    <div class="award-title">Best Paper Award</div>
+    <div class="award-venue">International Conference on the Human Side of Service Engineering</div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-year">2017</div>
+    <div class="award-title">Best Paper Award</div>
+    <div class="award-venue">Conference on Artificial Intelligence in Medicine</div>
+  </div>
+
+  <div class="award-card">
+    <div class="award-year">2015</div>
+    <div class="award-title">Dean Prize</div>
+    <div class="award-venue">Grad. School of Information Science & Technology, The University of Tokyo</div>
+  </div>
+</div>
+
+
+## Selected Publications
+
+<div class="publications-intro">
+All publications are available on <a href="https://scholar.google.com/citations?user=ri_w15gAAAAJ&hl=ja" target="_blank">my Google Scholar profile</a>.
+</div>
+
+<div class="publications-list">
+  <div class="publication-item">
+    <div class="publication-authors"><u>Yamada, Y.</u>, et al</div>
+    <div class="publication-title">Utility of synthetic musculoskeletal gaits for generalizable healthcare applications</div>
+    <div class="publication-venue">Nature Communications, 2025, 16.1: 6188</div>
+    <div class="publication-links">
+      <a target="_blank" href="https://www.nature.com/articles/s41467-025-61292-1">Paper</a>
+      <a target="_blank" href="https://research.ibm.com/blog/ai-learns-how-we-walk-for-neurology">IBM Blog</a>
+    </div>
+  </div>
+
+  <div class="publication-item">
+    <div class="publication-authors"><u>Yamada, Y.</u>, et al</div>
+    <div class="publication-title">Distinct eye movement patterns to complex scenes in Alzheimer's disease and Lewy body disease</div>
+    <div class="publication-venue">Frontiers in Neuroscience, 2024, 18: 1333894</div>
+    <div class="publication-links">
+      <a target="_blank" href="https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2024.1333894/full">Paper</a>
+    </div>
+  </div>
+
+  <div class="publication-item">
+    <div class="publication-authors">Kanazawa, H., <u>Yamada, Y.</u>, et al</div>
+    <div class="publication-title">Open-ended movements structure sensorimotor information in early human development</div>
+    <div class="publication-venue">Proceedings of the National Academy of Sciences, 2023, 120.1: e2209953120</div>
+    <div class="publication-links">
+      <a target="_blank" href="https://www.pnas.org/doi/abs/10.1073/pnas.2209953120">Paper</a>
+      <a target="_blank" href="https://www.u-tokyo.ac.jp/focus/en/press/z0508_00270.html">Press release</a>
+    </div>
+  </div>
+
+  <div class="publication-item">
+    <div class="publication-authors"><u>Yamada, Y.</u>, et al</div>
+    <div class="publication-title">Speech and language characteristics differentiate Alzheimer's disease and dementia with Lewy bodies</div>
+    <div class="publication-venue">Alzheimer's & Dementia: Diagnosis, Assessment & Disease Monitoring, 2022, 14.1: e12364</div>
+    <div class="publication-links">
+      <a target="_blank" href="https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.12364">Paper</a>
+    </div>
+  </div>
+
+  <div class="publication-item">
+    <div class="publication-authors"><u>Yamada, Y.</u>, et al</div>
+    <div class="publication-title">Combining Multimodal Behavioral Data of Gait, Speech, and Drawing for Classification of Alzheimer's Disease and Mild Cognitive Impairment</div>
+    <div class="publication-venue">Journal of Alzheimer's Disease, 2021, 84.1: 315-327</div>
+    <div class="publication-links">
+      <a target="_blank" href="https://journals.sagepub.com/doi/10.3233/JAD-210684?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">Paper</a>
+    </div>
+  </div>
+
+  <div class="publication-item">
+    <div class="publication-authors"><u>Yamada, Y.</u>, et al</div>
+    <div class="publication-title">An embodied brain model of the human foetus</div>
+    <div class="publication-venue">Scientific Reports, 2016, 6.1: 27893</div>
+    <div class="publication-links">
+      <a target="_blank" href="https://www.nature.com/articles/srep27893">Paper</a>
+      <a target="_blank" href="https://www.youtube.com/watch?v=9F23DzhJCfw">YouTube</a>
+    </div>
+  </div>
+</div>

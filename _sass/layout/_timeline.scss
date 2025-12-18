@@ -1,0 +1,397 @@
+/* ==========================================================================
+   TIMELINE & EXPERIENCE STYLES
+   ========================================================================== */
+
+/* Experience Grid Container */
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  margin: 1.5em 0;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2em;
+  }
+}
+
+/* Experience Item */
+.timeline-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Timeline Content - Compact Card Style */
+.timeline-content {
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-left: 3px solid var(--global-link-color);
+  border-radius: 4px;
+  padding: 1em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    border-left-color: var(--global-link-color-hover);
+    border-color: var(--global-link-color);
+  }
+}
+
+.timeline-year {
+  display: inline-block;
+  font-size: $type-size-6;
+  font-weight: bold;
+  color: var(--global-link-color);
+  background: var(--global-border-color);
+  padding: 0.2em 0.6em;
+  border-radius: 12px;
+  margin-bottom: 0.6em;
+  align-self: flex-start;
+}
+
+.timeline-title {
+  font-size: $type-size-6;
+  font-weight: bold;
+  margin: 0 0 0.4em 0;
+  color: var(--global-text-color);
+  line-height: 1.3;
+  flex-grow: 1;
+}
+
+.timeline-organization {
+  font-size: $type-size-5;
+  font-weight: 600;
+  color: var(--global-link-color);
+  margin: 0.4em 0 0.5em 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+
+  &::before {
+    content: '\f1ad'; /* Font Awesome building icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 0.9em;
+    color: var(--global-link-color);
+  }
+}
+
+.timeline-description {
+  font-size: $type-size-6;
+  color: var(--global-text-color);
+  margin-top: 0.5em;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Awards Section Styles */
+.awards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  margin: 2em 0;
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoint($large) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.award-card {
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  padding: 1.5em;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--global-link-color);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+    border-color: var(--global-link-color);
+
+    &::before {
+      transform: scaleY(1);
+    }
+  }
+}
+
+.award-year {
+  font-size: $type-size-6;
+  font-weight: bold;
+  color: var(--global-link-color);
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+
+  &::before {
+    content: '\f073'; /* Font Awesome calendar icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 0.9em;
+  }
+}
+
+.award-title {
+  font-size: $type-size-5;
+  font-weight: bold;
+  margin: 0.5em 0;
+  color: var(--global-text-color);
+  line-height: 1.3;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5em;
+
+  &::before {
+    content: '\f521'; /* Font Awesome trophy icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: var(--global-link-color);
+    font-size: 1.1em;
+    flex-shrink: 0;
+    margin-top: 0.1em;
+  }
+}
+
+.award-venue {
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+/* Publications Section Styles */
+.publications-list {
+  margin: 1.5em 0;
+}
+
+.publication-item {
+  margin-bottom: 1.5em;
+  padding: 1.2em;
+  background: var(--global-bg-color);
+  border-left: 3px solid var(--global-link-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transform: translateX(4px);
+    border-left-color: var(--global-link-color-hover);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.publication-authors {
+  font-size: $type-size-6;
+  color: var(--global-text-color);
+  margin-bottom: 0.4em;
+  line-height: 1.4;
+
+  u {
+    font-weight: bold;
+    color: var(--global-text-color);
+  }
+}
+
+.publication-title {
+  font-size: $type-size-5;
+  font-weight: bold;
+  color: var(--global-text-color);
+  margin: 0.4em 0;
+  line-height: 1.4;
+}
+
+.publication-venue {
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+  font-style: italic;
+  margin: 0.3em 0;
+}
+
+.publication-links {
+  margin-top: 0.6em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8em;
+  font-size: $type-size-6;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    padding: 0.3em 0.8em;
+    background: var(--global-border-color);
+    color: var(--global-link-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+
+    &:hover {
+      background: var(--global-link-color);
+      color: var(--global-bg-color);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &::before {
+      content: '\f1c1'; /* Font Awesome file icon */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: 0.9em;
+    }
+
+    &[href*="blog"]::before {
+      content: '\f02d'; /* Font Awesome book icon for blog */
+    }
+
+    &[href*="press"]::before {
+      content: '\f1ea'; /* Font Awesome newspaper icon for press */
+    }
+
+    &[href*="youtube"]::before {
+      content: '\f167'; /* Font Awesome YouTube icon */
+      font-family: "Font Awesome 6 Brands";
+      font-weight: 400;
+    }
+  }
+}
+
+.publications-intro,
+.awards-intro {
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+  margin-bottom: 1.5em;
+  font-style: italic;
+
+  a {
+    color: var(--global-link-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--global-link-color-hover);
+    }
+  }
+}
+
+/* CV Page Styles */
+.cv-page-container {
+  margin: 2em 0;
+}
+
+.cv-download-section {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  background: var(--global-border-color);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.cv-download-text {
+  margin: 0;
+  font-size: $type-size-5;
+  color: var(--global-text-color);
+
+  i {
+    margin-right: 0.5em;
+    color: var(--global-link-color);
+  }
+}
+
+.cv-download-link {
+  font-weight: bold;
+  color: var(--global-link-color);
+  text-decoration: none;
+  padding: 0.2em 0.6em;
+  background: var(--global-bg-color);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--global-link-color);
+    color: var(--global-bg-color);
+    text-decoration: none;
+  }
+}
+
+.cv-pdf-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--global-bg-color);
+}
+
+.cv-pdf-embed {
+  width: 100%;
+  min-height: 800px;
+  height: 1200px;
+  display: block;
+
+  @include breakpoint(max-width $medium) {
+    min-height: 600px;
+    height: 800px;
+  }
+
+  @include breakpoint(max-width $small) {
+    min-height: 400px;
+    height: 600px;
+  }
+}
+
+/* Responsive adjustments */
+@include breakpoint(max-width $small) {
+  .timeline {
+    gap: 0.8em;
+  }
+
+  .timeline-content {
+    padding: 0.8em;
+  }
+
+  .publication-item {
+    padding: 1em;
+  }
+
+  .cv-download-section {
+    padding: 0.8em;
+  }
+
+  .cv-download-text {
+    font-size: $type-size-6;
+  }
+}
+
