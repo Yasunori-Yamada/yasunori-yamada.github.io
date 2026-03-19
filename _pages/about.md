@@ -18,10 +18,10 @@ With a background bridging academic research and industrial innovation, I have c
   <div class="timeline-item">
     <div class="timeline-content">
       <span class="timeline-year">2025 – present</span>
-      <h3 class="timeline-title">General Manager, Advanced Clinical R&D</h3>
+      <h3 class="timeline-title">General Manager, Advanced Clinical R&D  / AI Development </h3>
       <div class="timeline-organization">Boston Medical Sciences</div>
       <div class="timeline-description">
-        Clinical Research in CT Colonography: Leading study design and execution
+        Clinical Research in CT Colonography: Leading study design and AI model development
       </div>
     </div>
   </div>
