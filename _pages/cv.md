@@ -14,13 +14,13 @@ redirect_from:
     <p class="cv-download-text">
       <i class="fas fa-download" aria-hidden="true"></i>
       You can download my CV
-      <a href="../files/Resume_YasunoriYamada_March2026.pdf" class="cv-download-link" target="_blank">here</a>
+      <a href="../files/Resume_YasunoriYamada_April2026.pdf" class="cv-download-link" target="_blank">here</a>
     </p>
   </div>
 
   <div class="cv-pdf-container">
     <embed
-      src="../files/Resume_YasunoriYamada_March2026.pdf"
+      src="../files/Resume_YasunoriYamada_April2026.pdf"
       type="application/pdf"
       class="cv-pdf-embed"
     />
