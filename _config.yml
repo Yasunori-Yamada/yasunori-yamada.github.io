@@ -23,7 +23,7 @@ repository               : "yasunori-yamada/yasunori-yamada.github.io" # "academ
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "YasunoriYamada.png"
+  avatar           : "YasunoriYamada.jpg" # filename of avatar image placed in /images/
   name             : "Yasunori Yamada"
   pronouns         : # example: "she/her"
   bio              : "Researcher in AI for healthcare"
@@ -143,7 +143,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "YasunoriYamada.png"  # Social media default site image
+og_image                 : "YasunoriYamada.jpg"  # Social media default site image
 og_description           : *description           # Social media default site image description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
