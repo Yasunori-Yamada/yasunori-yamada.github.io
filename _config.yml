@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Yasunori Yamada"
 title_separator          : "-"
 name                     : &name "Yasunori Yamada"
-description              : &description "Yasunori Yamada is a researcher in AI for healthcare, currently leading R&D on AI-based polyp detection in CT colonography and clinical trials for medical device approval at Boston Medical Sciences. Previously a Senior Research Scientist at IBM Research - Tokyo, working on digital health for neurology and psychiatry."
+description              : &description "Yasunori Yamada is CSO at Boston Medical Sciences, leading AI R&D and clinical trials for CT colonography. Previously Senior Research Scientist at IBM."
 url                      : https://yasunori-yamada.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "YasunoriYamada.jpg" # filename of avatar image placed in /images/
   name             : "Yasunori Yamada"
   pronouns         : # example: "she/her"
-  bio              : "Researcher in AI for healthcare"
+  bio              : "CSO / Head of R&D"
   location         : "Tokyo, Japan"
   employer         : #"Red Brick University"
   uri              : # URL

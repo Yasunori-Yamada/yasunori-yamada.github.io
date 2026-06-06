@@ -9,7 +9,7 @@ redirect_from:
 
 My research aims to advance healthcare through the application of cutting-edge technology.
 
-With a background bridging academic research and industrial innovation, I have cultivated a diverse interdisciplinary perspective that encompasses computational neuroscience, robotics, digital health, and AI. My work involves not only the rigorous development and validation of AI models but also leading the design and execution of clinical research. Currently, I am focused on leveraging AI technologies to address clinical challenges in CT colonography.
+With a background bridging academic research and industrial innovation, I have cultivated a diverse interdisciplinary perspective that encompasses computational neuroscience, robotics, digital health, and AI. My work involves not only the rigorous development and validation of AI models but also leading the design and execution of clinical research. Currently, as Chief Scientific Officer, I lead an R&D division integrating these efforts to achieve the early detection of polyps from CT colonography, ultimately aiming to advance the prevention of colorectal cancer.
 
 
 ## Education, Work and Research Experience
@@ -18,10 +18,10 @@ With a background bridging academic research and industrial innovation, I have c
   <div class="timeline-item">
     <div class="timeline-content">
       <span class="timeline-year">2025 – present</span>
-      <h3 class="timeline-title">General Manager, Advanced Clinical R&D  / AI Development </h3>
+      <h3 class="timeline-title">Chief Scientific Officer (CSO) / Head of R&D </h3>
       <div class="timeline-organization">Boston Medical Sciences</div>
       <div class="timeline-description">
-        Clinical Research in CT Colonography: Leading study design and AI model development
+        R&D in CT Colonography: Directing the entire pipeline from AI model development to clinical research
       </div>
     </div>
   </div>
